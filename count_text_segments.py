@@ -6,7 +6,11 @@ from pathlib import Path
 
 # this function counts the files in the bonus folder to know if count should be added to finished_segments or not
 def file_counter(bonus):
-
+   count = 0
+   for _ in bonus.iterdir():
+      count +=1
+   if count == 5:
+      return True
 
    return False
 
