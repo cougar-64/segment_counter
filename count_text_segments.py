@@ -27,14 +27,14 @@ def count_segments(target):
                   line = line.strip()
                   if line.isdigit():
                      count +=1
-            print(count)
+            # print(count)
    return count
 
 
 def main():
    # folder_path = Path(sys.argv[1])
-   # folder_path = Path("/Users/samuelbird/OneDrive - Brigham Young University/Coulson Rich's files - church_asl_annotations")
-   folder_path = Path("/Users/samuelbird/Desktop/MATRIX LAB/ASL_aligned_data/for_testing")
+   folder_path = Path("/Users/samuelbird/OneDrive - Brigham Young University/Coulson Rich's files - church_asl_annotations")
+   # folder_path = Path("/Users/samuelbird/Desktop/MATRIX LAB/ASL_aligned_data/for_testing")
    target_folder = "open_these_videos_and_subtitles_in_elan"
    bonus_folder = "save_subtitles_here_when_finished"
    total_segments = 0
